@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.TextArea?>
+
+<AnchorPane id="AnchorPane" fx:id="archRoot" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.chattingserver.AppController">
+    <children>
+        <Pane prefHeight="450.0" prefWidth="149.0">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="75.0" layoutY="89.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField fx:id="nameSpace" layoutX="16.0" layoutY="190.0" prefHeight="23.0" prefWidth="118.0" />
+            <Label layoutX="16.0" layoutY="167.0" text="닉네임" />
+         </children>
+        </Pane>
+      <VBox layoutX="149.0" prefHeight="450.0" prefWidth="251.0">
+         <children>
+            <ToolBar fx:id="topTool" prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button fx:id="enterBtn" mnemonicParsing="false" text="들어가기" />
+              </items>
+            </ToolBar>
+            <TextArea fx:id="screen" disable="true" prefHeight="371.0" prefWidth="251.0" />
+            <ToolBar fx:id="bottomTool" disable="true" prefHeight="40.0" prefWidth="200.0">
+              <items>
+                  <TextField fx:id="msgText" prefHeight="23.0" prefWidth="191.0" />
+                <Button fx:id="sendBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="40.0" text="전송" />
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
