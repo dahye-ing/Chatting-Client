@@ -79,7 +79,7 @@ public class ClientMain extends Application {
         }
 
         public static void getMsgText(String msg){
-            this.msg = msg;
+            //this.msg = msg;
         }
 
         @Override
@@ -99,7 +99,7 @@ public class ClientMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ClientMain.class.getResource("client-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 450, 400);
         stage.setTitle("어쩌구톡");
         stage.setScene(scene);
         stage.show();
